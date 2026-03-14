@@ -1,0 +1,5 @@
+make:
+	pyinstaller --onefile --distpath bin --name YoutubeDownloader
+
+clean:
+	gclean
