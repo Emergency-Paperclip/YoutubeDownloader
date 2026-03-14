@@ -1,5 +1,5 @@
-make:
-	pyinstaller --onefile --distpath bin --name YoutubeDownloader
+default:
+	pyinstaller --onefile --distpath bin --name YoutubeDownloader ytdl.py
 
 clean:
-	gclean
+	git clean -Xdf

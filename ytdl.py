@@ -30,7 +30,7 @@ def download_mp3():
     yt = YouTube(text)
     stream = yt.streams.get_audio_only()
     if stream:
-        path = asksaveasfilename(initialfile = 'audio.mp3', defaultextension = ".mp3", filetypes = [("Audio", "*.wav", "*.ogg", "*.mp3")])
+        path = asksaveasfilename(initialfile = 'audio.mp3', defaultextension = ".mp3", filetypes = [("Audio", "*.mp3")])
         name = path.split('/')[-1]
         path = path[:-len(name)]
     
